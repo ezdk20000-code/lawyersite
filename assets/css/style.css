@@ -16,6 +16,9 @@
   --radius: 4px;
   --container: 1180px;
   --font: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-logo: "Helvetica Neue", Helvetica, Arial, sans-serif; /* как в логотипе Axis Juris */
+  --logo-ink: #0d0d0d;
+  --logo-grey: #555555;
   --grad: linear-gradient(120deg, var(--blue-300) 0%, var(--blue-500) 35%, var(--blue-700) 70%, var(--blue-900) 100%);
 }
 
@@ -71,14 +74,14 @@ h1, h2, h3 { margin: 0; font-weight: 300; letter-spacing: -0.01em; }
   border-bottom: 1px solid var(--line);
 }
 .header__inner { display: flex; align-items: center; gap: 32px; min-height: 68px; }
-.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--blue-900); }
-.logo__mark { width: 34px; height: 34px; color: var(--blue-500); }
-.logo__text { display: flex; flex-direction: column; line-height: 1.05; }
-.logo__text b { font-size: 17px; letter-spacing: .06em; }
-.logo__text small { font-size: 9.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
-.logo--light { color: var(--white); }
-.logo--light .logo__mark { color: var(--blue-300); }
-.logo--light small { color: rgba(255,255,255,.6); }
+.logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--logo-ink); }
+.logo__mark { width: 46px; height: 35px; flex-shrink: 0; color: var(--logo-ink); }
+.logo__text { display: flex; flex-direction: column; line-height: 1.05; font-family: var(--font-logo); }
+.logo__text b { font-size: 20px; font-weight: 400; letter-spacing: .01em; white-space: nowrap; }
+.logo__text b span { color: var(--logo-grey); }
+.logo__text small { margin-top: 3px; font-size: 8.5px; letter-spacing: .26em; text-transform: uppercase; color: var(--logo-grey); }
+.logo--light, .logo--light .logo__mark { color: var(--white); }
+.logo--light .logo__text b span, .logo--light small { color: rgba(255,255,255,.65); }
 
 .nav { display: flex; gap: 26px; margin-left: auto; }
 .nav a { font-size: 14px; text-decoration: none; position: relative; padding: 4px 0; }
@@ -117,8 +120,10 @@ h1, h2, h3 { margin: 0; font-weight: 300; letter-spacing: -0.01em; }
   padding-top: 80px; padding-bottom: 64px;
 }
 .hero__brand { grid-column: 2; grid-row: 1; align-self: center; text-align: left; }
-.hero__name { font-size: clamp(40px, 6vw, 78px); font-weight: 300; letter-spacing: .04em; line-height: 1; }
-.hero__role { margin-top: 14px; font-size: clamp(14px, 1.6vw, 22px); font-weight: 600; letter-spacing: .14em; }
+.hero__name { font-family: var(--font-logo); font-size: clamp(44px, 6.4vw, 86px); font-weight: 300; letter-spacing: .01em; line-height: 1; white-space: nowrap; }
+.hero__name span { opacity: .72; }
+.hero__mark { display: block; width: clamp(84px, 9vw, 130px); aspect-ratio: 340 / 260; height: auto; color: var(--white); margin-bottom: 28px; }
+.hero__role { margin-top: 14px; font-family: var(--font-logo); font-size: clamp(12px, 1.4vw, 18px); font-weight: 400; letter-spacing: .3em; }
 .hero__offer { grid-column: 1; grid-row: 1; }
 .hero__title { font-size: clamp(30px, 3.6vw, 48px); line-height: 1.12; margin-bottom: 18px; }
 .hero__lead { font-size: 17px; max-width: 520px; opacity: .9; margin: 0 0 32px; }
@@ -137,10 +142,11 @@ h1, h2, h3 { margin: 0; font-weight: 300; letter-spacing: -0.01em; }
 .hero__shards--dim .shard { opacity: .7; }
 
 /* ---------- Услуги ---------- */
-.services__mark { display: flex; flex-direction: column; align-items: center; width: max-content; margin-top: 48px; color: var(--blue-900); }
-.services__mark svg { width: 120px; height: 120px; color: var(--blue-900); }
-.services__mark span { font-size: 36px; letter-spacing: .1em; margin-top: 18px; }
-.services__mark small { font-size: 11px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.services__mark { display: flex; flex-direction: column; align-items: center; width: max-content; margin-top: 48px; color: var(--logo-ink); font-family: var(--font-logo); }
+.services__mark svg { width: 150px; height: 115px; }
+.services__mark span { font-size: 40px; margin-top: 18px; line-height: 1; }
+.services__mark span i { font-style: normal; color: var(--logo-grey); }
+.services__mark small { margin-top: 10px; font-size: 11px; letter-spacing: .3em; text-transform: uppercase; color: var(--logo-grey); }
 .services__intro { max-width: 440px; margin: 0 0 36px; font-size: 14px; color: var(--ink); }
 .list-links { list-style: none; margin: 0; padding: 0; }
 .list-links button {
@@ -175,7 +181,7 @@ h1, h2, h3 { margin: 0; font-weight: 300; letter-spacing: -0.01em; }
   display: grid; place-items: center; align-content: center; gap: 8px;
   background: var(--grad); color: rgba(255,255,255,.85); font-size: 12px; border-radius: var(--radius);
 }
-.about__photo svg { width: 48px; height: 48px; }
+.about__photo svg { width: 62px; height: 48px; }
 .about__text p { margin: 0 0 16px; font-size: 15px; }
 .badges { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 14px; }
 .badges li { display: flex; align-items: center; gap: 14px; font-size: 14px; }
@@ -357,6 +363,8 @@ body.modal-open { overflow: hidden; }
   .container { padding-left: 16px; padding-right: 16px; }
   .header__phone { font-size: 14px; }
   .logo__text small { display: none; }
+  .logo__mark { width: 40px; height: 31px; }
+  .logo__text b { font-size: 18px; }
   .hero__facts { gap: 18px; flex-wrap: wrap; }
   .hero__facts li { flex: 1 1 28%; }
   .hero__actions .btn { flex: 1 1 100%; }
