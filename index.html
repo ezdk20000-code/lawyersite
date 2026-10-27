@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- TODO: заменить имя, город и описание -->
+  <title>Юрист Алексей Иванов — юридическая помощь в Москве | Консультация бесплатно</title>
+  <meta name="description" content="Частный юрист в Москве: семейные споры, банкротство граждан, наследство, защита прав потребителей, споры с застройщиками и страховыми. Бесплатная первичная консультация.">
+  <meta property="og:title" content="Юрист Алексей Иванов — юридическая помощь">
+  <meta property="og:description" content="Бесплатная первичная консультация. Разберу ситуацию и предложу план действий.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/og.png">
+  <meta name="theme-color" content="#1b4f8a">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ ШАПКА ============ -->
+<header class="header" id="top">
+  <div class="container header__inner">
+    <a href="#top" class="logo" aria-label="На главную">
+      <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true"><use href="#mark"/></svg>
+      <span class="logo__text">
+        <b>ИВАНОВ</b>
+        <small>юридическая практика</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#services">Услуги</a>
+      <a href="#how">Как работаю</a>
+      <a href="#about">Обо мне</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <div class="header__contacts">
+      <a class="header__phone js-phone" href="tel:+79000000000">+7 (900) 000-00-00</a>
+      <span class="header__hours">Ежедневно 9:00–21:00</span>
+    </div>
+
+    <div class="header__msg">
+      <a class="icon-btn js-wa" href="https://wa.me/79000000000" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg></a>
+      <a class="icon-btn js-tg" href="https://t.me/username" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24"><use href="#i-tg"/></svg></a>
+    </div>
+
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ ПЕРВЫЙ ЭКРАН ============ -->
+<section class="hero">
+  <div class="hero__shards" aria-hidden="true">
+    <i class="shard shard--1"></i><i class="shard shard--2"></i><i class="shard shard--3"></i><i class="shard shard--4"></i>
+  </div>
+  <div class="container hero__inner">
+    <div class="hero__brand">
+      <div class="hero__name">АЛЕКСЕЙ ИВАНОВ</div>
+      <div class="hero__role">ЧАСТНЫЙ ЮРИСТ · МОСКВА</div>
+    </div>
+
+    <div class="hero__offer">
+      <!-- Заголовок подменяется по ссылке из рекламы: ?s=bankrotstvo, ?s=semya и т. д. (см. assets/js/main.js) -->
+      <h1 class="hero__title" id="heroTitle">Юридическая помощь гражданам и бизнесу</h1>
+      <p class="hero__lead" id="heroLead">Разберу вашу ситуацию на бесплатной консультации, оценю перспективы и предложу понятный план действий с фиксированной стоимостью.</p>
+      <div class="hero__actions">
+        <button class="btn btn--light js-open-form" data-topic="Бесплатная консультация">Получить консультацию</button>
+        <a class="btn btn--ghost js-phone" href="tel:+79000000000">Позвонить</a>
+      </div>
+      <ul class="hero__facts">
+        <li><b>15 мин</b> ответ на заявку</li>
+        <li><b>0 ₽</b> первичная консультация</li>
+        <li><b>Договор</b> и фиксированная цена</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ УСЛУГИ ============ -->
+<section class="section services" id="services">
+  <div class="container grid-2">
+    <div>
+      <h2 class="h2">Решаю правовые вопросы<br>от консультации до суда</h2>
+      <div class="label">Услуги</div>
+      <div class="services__mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40"><use href="#mark"/></svg>
+        <span>ИВАНОВ</span>
+        <small>юридическая практика</small>
+      </div>
+    </div>
+    <div>
+      <p class="muted services__intro">Веду дела граждан и малого бизнеса. Каждое дело начинаю с анализа документов и оценки рисков, чтобы вы заранее понимали сроки, расходы и возможный результат.</p>
+      <ul class="list-links">
+        <li><button class="js-open-form" data-topic="Семейные споры">Семейные споры: развод, раздел имущества, алименты, дети<span>Подробнее →</span></button></li>
+        <li><button class="js-open-form" data-topic="Банкротство физлиц">Банкротство физических лиц и списание долгов<span>Подробнее →</span></button></li>
+        <li><button class="js-open-form" data-topic="Наследство">Наследственные споры и оформление наследства<span>Подробнее →</span></button></li>
+        <li><button class="js-open-form" data-topic="Защита прав потребителей">Защита прав потребителей, возврат денег<span>Подробнее →</span></button></li>
+        <li><button class="js-open-form" data-topic="Недвижимость и застройщики">Недвижимость, споры с застройщиками, неустойка по ДДУ<span>Подробнее →</span></button></li>
+        <li><button class="js-open-form" data-topic="ДТП и страховые споры">ДТП и споры со страховыми компаниями<span>Подробнее →</span></button></li>
+        <li><button class="js-open-form" data-topic="Трудовые споры">Трудовые споры, взыскание зарплаты<span>Подробнее →</span></button></li>
+        <li><button class="js-open-form" data-topic="Договоры и бизнес">Договоры и сопровождение бизнеса<span>Подробнее →</span></button></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ КАК РАБОТАЮ / ПРЕИМУЩЕСТВА ============ -->
+<section class="section section--blue how" id="how">
+  <div class="hero__shards hero__shards--dim" aria-hidden="true">
+    <i class="shard shard--2"></i><i class="shard shard--4"></i>
+  </div>
+  <div class="container">
+    <h2 class="h2">Превращаю правовую проблему<br>в понятный план действий</h2>
+    <div class="steps">
+      <div class="step"><div class="step__num">01</div><h3>Бесплатная консультация</h3><p>Выслушаю ситуацию по телефону, в мессенджере или в офисе. Скажу честно, есть ли перспективы.</p></div>
+      <div class="step"><div class="step__num">02</div><h3>Анализ документов</h3><p>Изучу договоры, переписку и решения. Найду сильные и слабые стороны позиции.</p></div>
+      <div class="step"><div class="step__num">03</div><h3>План и смета</h3><p>Предложу стратегию, сроки и фиксированную стоимость. Никаких скрытых доплат.</p></div>
+      <div class="step"><div class="step__num">04</div><h3>Договор</h3><p>Все обязательства — в письменном договоре. Оплата поэтапно, по мере выполнения работ.</p></div>
+      <div class="step"><div class="step__num">05</div><h3>Работа по делу</h3><p>Готовлю документы, веду переговоры, представляю интересы в суде и госорганах.</p></div>
+      <div class="step"><div class="step__num">06</div><h3>Регулярные отчёты</h3><p>Вы всегда знаете, что происходит по делу: отчёт после каждого этапа и связь в мессенджере.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ОБО МНЕ ============ -->
+<section class="section about" id="about">
+  <div class="container">
+    <div class="grid-2">
+      <div class="about__head">
+        <div class="about__photo" aria-hidden="true">
+          <!-- TODO: заменить на фото: <img src="assets/img/photo.jpg" alt="Алексей Иванов"> -->
+          <svg viewBox="0 0 40 40"><use href="#mark"/></svg>
+          <span>Фото</span>
+        </div>
+        <h2 class="h2">Алексей Иванов</h2>
+      </div>
+      <div class="about__text">
+        <p>Практикующий юрист, высшее юридическое образование (TODO: вуз, год). Специализируюсь на гражданских спорах: семейных, наследственных, потребительских и делах о банкротстве граждан.</p>
+        <p class="muted">Работаю лично, без «конвейера» помощников. Беру в работу только те дела, в которых вижу реальные перспективы, и прямо говорю о рисках.</p>
+        <ul class="badges">
+          <li><span class="badge-ico">⚖</span>Член ассоциации юристов (TODO)</li>
+          <li><span class="badge-ico">★</span>Рейтинг 4,9 на Авито и Яндекс Картах (TODO)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="stat__label">лет юридической<br>практики</div><div class="stat__num" data-count="12">12+</div></div>
+      <div class="stat"><div class="stat__label">дел проведено<br>в судах</div><div class="stat__num" data-count="450">450+</div></div>
+      <div class="stat"><div class="stat__label">консультаций<br>за последний год</div><div class="stat__num" data-count="1200">1200+</div></div>
+      <div class="stat"><div class="stat__label">рабочих дня —<br>срок подготовки иска</div><div class="stat__num" data-count="3">3</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ КВИЗ ============ -->
+<section class="section quiz-section" id="quiz">
+  <div class="container grid-2">
+    <div>
+      <h2 class="h2">Узнайте стоимость<br>за 1 минуту</h2>
+      <div class="label">3 вопроса</div>
+      <p class="muted">Ответьте на несколько вопросов — я подготовлю предварительную оценку и перезвоню с расчётом стоимости.</p>
+    </div>
+    <form class="quiz" id="quiz-form" novalidate>
+      <div class="quiz__progress"><span id="quizBar"></span></div>
+
+      <fieldset class="quiz__step is-active" data-step="1">
+        <legend>Какой у вас вопрос?</legend>
+        <label class="opt"><input type="radio" name="q_topic" value="Семейный спор"><span>Семейный спор</span></label>
+        <label class="opt"><input type="radio" name="q_topic" value="Долги / банкротство"><span>Долги, банкротство</span></label>
+        <label class="opt"><input type="radio" name="q_topic" value="Наследство"><span>Наследство</span></label>
+        <label class="opt"><input type="radio" name="q_topic" value="Потребитель / застройщик / страховая"><span>Спор с продавцом, застройщиком, страховой</span></label>
+        <label class="opt"><input type="radio" name="q_topic" value="Другое"><span>Другое</span></label>
+      </fieldset>
+
+      <fieldset class="quiz__step" data-step="2">
+        <legend>На какой стадии дело?</legend>
+        <label class="opt"><input type="radio" name="q_stage" value="Ещё не обращался в суд"><span>Ещё не обращался в суд</span></label>
+        <label class="opt"><input type="radio" name="q_stage" value="Дело уже в суде"><span>Дело уже в суде</span></label>
+        <label class="opt"><input type="radio" name="q_stage" value="Есть решение, нужно обжаловать"><span>Есть решение, нужно обжаловать</span></label>
+        <label class="opt"><input type="radio" name="q_stage" value="Нужна только консультация"><span>Нужна только консультация</span></label>
+      </fieldset>
+
+      <fieldset class="quiz__step" data-step="3">
+        <legend>Как срочно нужна помощь?</legend>
+        <label class="opt"><input type="radio" name="q_urgency" value="Сегодня-завтра"><span>Сегодня или завтра</span></label>
+        <label class="opt"><input type="radio" name="q_urgency" value="В течение недели"><span>В течение недели</span></label>
+        <label class="opt"><input type="radio" name="q_urgency" value="Не срочно"><span>Не срочно, собираю информацию</span></label>
+      </fieldset>
+
+      <fieldset class="quiz__step" data-step="4">
+        <legend>Куда отправить расчёт?</legend>
+        <input class="input" type="text" name="name" placeholder="Ваше имя" autocomplete="name">
+        <input class="input js-tel" type="tel" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" required>
+        <label class="check"><input type="checkbox" name="consent" required><span>Согласен на <a href="privacy.html" target="_blank">обработку персональных данных</a></span></label>
+        <button class="btn btn--primary" type="submit">Получить расчёт</button>
+      </fieldset>
+
+      <div class="quiz__nav">
+        <button type="button" class="btn-link" id="quizPrev" hidden>← Назад</button>
+        <span class="quiz__count" id="quizCount">Шаг 1 из 4</span>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ============ ОТЗЫВЫ ============ -->
+<section class="section reviews" id="reviews">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="h2">Отзывы клиентов</h2>
+      <div class="arrows">
+        <button class="arrow" data-slider="reviews" data-dir="-1" aria-label="Назад">‹</button>
+        <button class="arrow" data-slider="reviews" data-dir="1" aria-label="Вперёд">›</button>
+      </div>
+    </div>
+    <!-- TODO: заменить на реальные отзывы (можно со скриншотами с Авито / Яндекс Карт) -->
+    <div class="slider" id="slider-reviews">
+      <article class="review"><div class="review__stars">★★★★★</div><p>Помог разделить имущество после развода без долгого суда — договорились мировым соглашением. Всё объяснял простым языком.</p><div class="review__who">Марина К. · Авито</div></article>
+      <article class="review"><div class="review__stars">★★★★★</div><p>Прошёл процедуру банкротства, долги списаны. Отдельное спасибо, что сразу честно рассказал про риски и сроки.</p><div class="review__who">Сергей П. · Яндекс Карты</div></article>
+      <article class="review"><div class="review__stars">★★★★★</div><p>Взыскали с застройщика неустойку за просрочку сдачи квартиры. Ни разу не пришлось самой ходить в суд.</p><div class="review__who">Ольга Д. · Авито</div></article>
+      <article class="review"><div class="review__stars">★★★★★</div><p>Страховая занизила выплату по ДТП. После претензии и иска получил полную сумму плюс штраф.</p><div class="review__who">Дмитрий Л. · Яндекс Карты</div></article>
+      <article class="review"><div class="review__stars">★★★★★</div><p>Быстро подготовил документы по наследству, подсказал, как избежать лишних расходов.</p><div class="review__who">Анна С. · Авито</div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ФОРМА (полоса) ============ -->
+<section class="section section--blue cta" id="consult">
+  <div class="hero__shards hero__shards--dim" aria-hidden="true"><i class="shard shard--3"></i></div>
+  <div class="container">
+    <h2 class="h2">Бесплатная консультация</h2>
+    <p class="cta__sub">Оставьте контакты — перезвоню в течение 15 минут в рабочее время и отвечу на ваш вопрос.</p>
+    <form class="lead-form lead-form--row js-lead-form" novalidate>
+      <input type="hidden" name="topic" value="Бесплатная консультация (форма внизу)">
+      <input class="input input--line" type="text" name="name" placeholder="Ваше имя" autocomplete="name">
+      <input class="input input--line js-tel" type="tel" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" required>
+      <input class="input input--line" type="text" name="message" placeholder="Кратко о вопросе">
+      <button class="btn btn--light" type="submit">Отправить заявку</button>
+      <label class="check check--light"><input type="checkbox" name="consent" required><span>Нажимая кнопку, я соглашаюсь с <a href="privacy.html" target="_blank">политикой обработки персональных данных</a></span></label>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section faq" id="faq">
+  <div class="container grid-2">
+    <div>
+      <h2 class="h2">Частые вопросы</h2>
+      <div class="label">FAQ</div>
+    </div>
+    <div class="faq__list">
+      <details><summary>Консультация действительно бесплатная?</summary><p>Да, первичная консультация до 30 минут бесплатна: по телефону, в мессенджере или в офисе. Я выслушаю ситуацию и скажу, какие есть варианты.</p></details>
+      <details><summary>Сколько стоят услуги?</summary><p>Стоимость зависит от сложности дела и фиксируется в договоре до начала работы. Составление претензии — от 3 000 ₽, искового заявления — от 7 000 ₽, ведение дела в суде — от 30 000 ₽ (TODO: актуальные цены).</p></details>
+      <details><summary>Можно ли работать дистанционно?</summary><p>Да. Документы можно прислать в мессенджер, договор подписать электронно, а оплату внести переводом. Во многих делах ваше личное присутствие в суде не требуется.</p></details>
+      <details><summary>Даёте ли вы гарантию выигрыша?</summary><p>Честный юрист не может гарантировать решение суда — его принимает судья. Я гарантирую качественную работу, прозрачные условия и регулярные отчёты, а перспективы оцениваю ещё до заключения договора.</p></details>
+      <details><summary>Есть ли рассрочка?</summary><p>Да, оплата возможна поэтапно, а по делам о банкротстве — в рассрочку на период процедуры.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ КОНТАКТЫ ============ -->
+<section class="section contacts" id="contacts">
+  <div class="container grid-2">
+    <div>
+      <h2 class="h2">Контакты</h2>
+      <ul class="contacts__list">
+        <li><span>Телефон</span><a class="js-phone" href="tel:+79000000000">+7 (900) 000-00-00</a></li>
+        <li><span>Мессенджеры</span><a class="js-wa" href="https://wa.me/79000000000" target="_blank" rel="noopener">WhatsApp</a> · <a class="js-tg" href="https://t.me/username" target="_blank" rel="noopener">Telegram</a></li>
+        <li><span>Почта</span><a href="mailto:info@example.ru">info@example.ru</a></li>
+        <li><span>Офис</span>г. Москва, ул. Примерная, д. 1, офис 101 (TODO)</li>
+        <li><span>Время работы</span>Ежедневно 9:00–21:00, встречи по записи</li>
+      </ul>
+    </div>
+    <div class="map" id="map">
+      <!-- TODO: вставить виджет Яндекс Карт (Конструктор карт → код iframe) -->
+      <div class="map__ph">Здесь будет Яндекс Карта</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ ПОДВАЛ ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div>
+      <div class="logo logo--light">
+        <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true"><use href="#mark"/></svg>
+        <span class="logo__text"><b>ИВАНОВ</b><small>юридическая практика</small></span>
+      </div>
+      <!-- Реквизиты обязательны для модерации Яндекс Директа -->
+      <p class="footer__req">ИП Иванов Алексей Алексеевич<br>ИНН 000000000000 · ОГРНИП 000000000000000 (TODO)</p>
+    </div>
+    <div class="footer__links">
+      <a href="privacy.html">Политика конфиденциальности</a>
+      <a href="#services">Услуги</a>
+      <a href="#contacts">Контакты</a>
+    </div>
+    <p class="footer__note">Информация на сайте не является публичной офертой. © <span id="year">2026</span></p>
+  </div>
+</footer>
+
+<!-- Липкая панель на мобильных: главный источник конверсий из рекламы -->
+<div class="sticky-bar">
+  <a class="sticky-bar__btn js-phone" href="tel:+79000000000"><svg viewBox="0 0 24 24"><use href="#i-phone"/></svg>Позвонить</a>
+  <a class="sticky-bar__btn js-wa" href="https://wa.me/79000000000" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg>WhatsApp</a>
+  <button class="sticky-bar__btn sticky-bar__btn--accent js-open-form" data-topic="Заявка с мобильной панели">Заявка</button>
+</div>
+
+<!-- Модальное окно с формой -->
+<div class="modal" id="modal" hidden>
+  <div class="modal__overlay" data-close></div>
+  <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal__close" data-close aria-label="Закрыть">×</button>
+    <div class="label" id="modalTopic">Консультация</div>
+    <h3 class="modal__title" id="modalTitle">Бесплатная консультация</h3>
+    <p class="muted">Перезвоню в течение 15 минут в рабочее время.</p>
+    <form class="lead-form js-lead-form" novalidate>
+      <input type="hidden" name="topic" value="">
+      <input class="input" type="text" name="name" placeholder="Ваше имя" autocomplete="name">
+      <input class="input js-tel" type="tel" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" required>
+      <textarea class="input" name="message" rows="3" placeholder="Кратко опишите ситуацию (необязательно)"></textarea>
+      <label class="check"><input type="checkbox" name="consent" required><span>Согласен на <a href="privacy.html" target="_blank">обработку персональных данных</a></span></label>
+      <button class="btn btn--primary" type="submit">Отправить</button>
+    </form>
+  </div>
+</div>
+
+<!-- SVG-спрайт -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 40 40">
+    <g fill="currentColor">
+      <path d="M18.5 2h3v10h-3z"/>
+      <path d="M18.5 28h3v10h-3z"/>
+      <path d="M2 18.5h10v3H2z"/>
+      <path d="M28 18.5h10v3H28z"/>
+      <path d="M7.2 5.1l2.1-2.1 7.1 7.1-2.1 2.1z"/>
+      <path d="M23.6 29.9l2.1-2.1 7.1 7.1-2.1 2.1z"/>
+      <path d="M5.1 32.8l7.1-7.1 2.1 2.1-7.1 7.1z"/>
+      <path d="M27.8 12.2l7.1-7.1 2.1 2.1-7.1 7.1z"/>
+    </g>
+  </symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.25-.12-1.47-.72-1.7-.8-.23-.09-.4-.13-.56.12-.17.25-.64.8-.79.97-.14.16-.29.18-.54.06a6.7 6.7 0 0 1-3.3-2.9c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.42-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.42h-.48a.92.92 0 0 0-.66.31 2.8 2.8 0 0 0-.87 2.07c0 1.22.89 2.4 1.01 2.57.12.16 1.75 2.67 4.24 3.75 1.57.68 2.19.74 2.98.62.48-.07 1.47-.6 1.68-1.18.2-.58.2-1.08.14-1.18-.06-.1-.23-.17-.48-.29z"/></symbol>
+  <symbol id="i-tg" viewBox="0 0 24 24"><path fill="currentColor" d="M21.9 4.3 18.7 19.4c-.24 1.07-.87 1.33-1.76.83l-4.87-3.59-2.35 2.26c-.26.26-.48.48-.98.48l.35-4.96 9.02-8.15c.39-.35-.09-.54-.61-.2L6.35 13.1 1.55 11.6c-1.04-.33-1.06-1.04.22-1.54L20.5 2.85c.87-.32 1.63.2 1.4 1.45z"/></symbol>
+</svg>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
